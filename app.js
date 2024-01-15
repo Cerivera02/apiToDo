@@ -6,17 +6,17 @@ const app = express();
 const port = process.env.PORT ?? 3000;
 
 // Configuración de la conexión a PostgreSQL
-const pool = new Pool({
-  user: 'fl0user',
-  host: 'ep-black-salad-87891778.us-east-2.aws.neon.fl0.io',
-  database: 'ToDo',
-  password: '3jOLckdbW6nA',
-  port: 5432,
-  ssl: { rejectUnauthorized: false },
-});
+// const pool = new Pool({
+//   user: 'fl0user',
+//   host: 'ep-black-salad-87891778.us-east-2.aws.neon.fl0.io',
+//   database: 'ToDo',
+//   password: '3jOLckdbW6nA',
+//   port: 5432,
+//   ssl: { rejectUnauthorized: false },
+// });
 
 const pool = new Pool({
-    connectionString: 'postgres://tu_usuario:tu_contraseña@localhost:5432/tu_base_de_datos?sslmode=require',
+    connectionString: 'postgres://fl0user:3jOLckdbW6nA@ep-black-salad-87891778.us-east-2.aws.neon.fl0.io:5432/ToDo?sslmode=require',
   });
   
 
